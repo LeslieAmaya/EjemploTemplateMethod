@@ -11,13 +11,13 @@ namespace EjemploTemplateMethod
         static void Main(string[] args)
         {
             Pedido pedidoEspaña = new PedidoEspaña();
-            pedidoEspaña.setImporteSinIVA(10000);
+            pedidoEspaña.setImporteSinIVA(10000.25);
             pedidoEspaña.calculaPrecioConIVA();
             pedidoEspaña.visualiza();
 
 
             Pedido pedidoLuxemburgo = new PedidoLuxemburgo();
-            pedidoLuxemburgo.setImporteSinIVA(10000);
+            pedidoLuxemburgo.setImporteSinIVA(10000.25);
             pedidoLuxemburgo.calculaPrecioConIVA();
             pedidoLuxemburgo.visualiza();
         }

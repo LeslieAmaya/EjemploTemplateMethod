@@ -8,12 +8,11 @@ namespace EjemploTemplateMethod
 {
     public abstract class Pedido
     {
-        protected double importeSinIVA;
-        protected double importeIVA;
-        protected double importeConIVA;
+        protected double importeSinIVA; //creamos el método protected para utilizarlo solo con herencia
+        protected double importeIVA; //creamos el método protected para utilizarlo solo con herencia
+        protected double importeConIVA; //creamos el método protected para utilizarlo solo con herencia
 
-        protected abstract void calculaIVA();
-
+        protected abstract void calculaIVA(); //creamos el método protected para utilizarlo solo con herencia
         public void calculaPrecioConIVA()
         {
             this.calculaIVA();
