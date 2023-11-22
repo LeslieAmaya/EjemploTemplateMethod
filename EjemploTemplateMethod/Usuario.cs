@@ -10,14 +10,13 @@ namespace EjemploTemplateMethod
     {
         static void Main(string[] args)
         {
-            Pedido pedidoEspaña = new PedidoEspaña();
-            pedidoEspaña.setImporteSinIVA(10000.25);
+            Pedido pedidoEspaña = new PedidoEspaña(); //Mostramos el pedido de España
+            pedidoEspaña.setImporteSinIVA(1234.12); //Ingresamos cantidad para el uso de los métodos (decimal opcional)
             pedidoEspaña.calculaPrecioConIVA();
             pedidoEspaña.visualiza();
 
-
-            Pedido pedidoLuxemburgo = new PedidoLuxemburgo();
-            pedidoLuxemburgo.setImporteSinIVA(10000.25);
+            Pedido pedidoLuxemburgo = new PedidoLuxemburgo(); //Mostramos el pedido de Luxemburgo
+            pedidoLuxemburgo.setImporteSinIVA(1234.12); //Ingresamos cantidad para el uso de los métodos (decimal opcional)
             pedidoLuxemburgo.calculaPrecioConIVA();
             pedidoLuxemburgo.visualiza();
         }

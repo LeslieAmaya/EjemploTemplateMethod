@@ -8,9 +8,9 @@ namespace EjemploTemplateMethod
 {
     public class PedidoLuxemburgo : Pedido
     {
-        protected override void calculaIVA()
+        protected override void calculaIVA() 
         {
-            importeIVA = importeSinIVA * 0.17;
+            importeIVA = importeSinIVA * 0.17; //el importe de IVA es de 0.17 en Luxemburgo
         }
     }
 }

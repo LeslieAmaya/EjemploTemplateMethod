@@ -16,15 +16,15 @@ namespace EjemploTemplateMethod
         public void calculaPrecioConIVA()
         {
             this.calculaIVA();
-            importeConIVA = importeSinIVA + importeIVA;
+            importeConIVA = importeSinIVA + importeIVA; //precio + precio*IVA
         }
 
         public void setImporteSinIVA(double importeSinIVA)
         {
-            this.importeSinIVA = importeSinIVA;
+            this.importeSinIVA = importeSinIVA; //cálculo de importe sin IVA
         }
 
-        public void visualiza()
+        public void visualiza() //Muestra los datos de importe sin IVA y con IVA
         {
             Console.WriteLine("Pedido");
             Console.WriteLine("Importe sin IVA " + importeSinIVA);

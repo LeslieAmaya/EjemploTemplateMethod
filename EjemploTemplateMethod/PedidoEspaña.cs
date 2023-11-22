@@ -10,7 +10,7 @@ namespace EjemploTemplateMethod
     {
         protected override void calculaIVA()
         {
-            importeIVA = importeSinIVA * 0.2;
+            importeIVA = importeSinIVA * 0.2; //el importe de IVA es 0.2 en España
         }
     }
 }
